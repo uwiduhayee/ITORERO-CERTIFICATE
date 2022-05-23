@@ -1,0 +1,39 @@
+body{
+	background-image:url("d.png");
+	background-size: cover;
+}
+#back{
+	background :#345;
+	background-size: cover;
+	height: 100%;
+	width: 80%;
+	position: fixed;
+	overflow: auto;
+	right: 140px;
+
+}
+#menu{
+	height: 40px;
+	width: 90%;
+	background:white;
+	display:block; 
+}
+#body-content{
+	background:#345678;
+	height: 60%;
+	width: 90%;
+}
+#footer{
+	background:white;
+	height: 60px;
+	width: 90%;
+}
+table.heading{
+	background:#345;
+	width: 90%
+}
+table.home-content{
+	height: 95%;
+	width: 100%;
+
+}
