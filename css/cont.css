@@ -1,0 +1,47 @@
+/* CSS Document */
+#contact1{
+        
+		 height:650px;
+		 width:220px;
+		 float:left;
+		 border-radius:0px 0px 0px 15px;
+		
+		
+			
+		 }
+#contact2{
+         
+		 height:650px;
+		 width:500px;
+		 float:left;
+		border-radius:0px 0px 15px 0px;
+	
+		border:1px solidwhite;
+	
+		 }
+#contact3{
+          background:white;
+		  margin-top:2px;
+		 height:600px;
+		 width:90px;
+		 float:right; margin-top:25px;
+		border-radius:15px 15px 15px 15px;
+			
+		
+		
+		
+		}
+#send:hover{    
+              	color:#078fcb;
+            }
+			
+#inputcont{ font-size:18px;
+           font-family:Verdana, Arial, Helvetica, sans-serif;
+            }			
+
+#send{  background:url(../back/white.jpeg);
+       width:320px;
+	   margin-left:120px;
+	   margin-tops:-2px;
+	   height:60px;
+        }

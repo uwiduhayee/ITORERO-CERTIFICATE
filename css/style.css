@@ -1,0 +1,128 @@
+#header{
+            height:140px;
+			width:850px;
+			font-size:12px;
+			border-radius:15px 15px 15px 15px;
+			margin-top:20px;
+			margin-bottom:25px;
+			
+			display:transparent;
+			background:url(../back/BG_02.jpg);
+
+			
+			
+			}
+
+
+#headera{width:150px;
+           height:140px;
+		   background:#990000;
+		   float:left;
+		   border-radius:15px 15px 15px 15px;
+		   background-color: white;
+		   
+		   }
+#headerb{  width:550px;
+           height:100px;
+		    background:url(../back/white.jpeg);
+		   float:left;
+		   margin-top:20px;
+		   
+		  
+		   }
+	
+#headerc{width:150px;
+           height:140px;
+		   background:#CC9933;
+		  
+		   float:right;
+		  
+		   background-position:center;
+		   border-radius:15px 15px 15px 15px 15px; 
+		   
+		   }
+#table1{
+         font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-size:24px;
+		border-radius:15px 15px 0px 0px;
+		
+		height:50;
+		width:850px;
+		text-align:center;
+		margin-top:20px;
+		text-decoration:none;
+		background:#FFFFFF;
+		color:#330033;
+		font-stretch:condensed;
+		
+		}
+
+a{
+text-decoration:none;
+color:#330066;
+font-family:Verdana, Arial, Helvetica, sans-serif;;
+}
+#ab:hover{color:#078fcb; }
+          
+#td1:hover{
+           
+			color:#000066;
+			background:#ffffff;
+			
+			text-decoration:overline;
+			text-transform:capitalize;
+			border-radius:5px 5px 5px 5px;
+			 
+			 }
+		
+ #body{
+            height:650px;
+			width:850px;
+			text-align:center;
+			font-size:12px;
+			
+			
+			
+			     border-radius:0px 0px 15px 15px;
+				 background:url(../back/background.gif);
+				border:2px solid #00000000;
+			
+			}
+
+#footer{
+            height:70px;
+			width:850px;
+			font-size-adjust:6px;
+			text-align:center;
+			background:url(../back/backgroun.jpg);
+			border-radius:15px 15px 15px 15px;
+			margin-top:20px;
+			margin-bottom:25px;
+	background:url(../back/BG_02.jpg);
+				border:2px solid #333333;
+			}
+#footera{
+            height:70px;
+			width:60px;
+		
+			float:left;
+			border-radius:15px 15px 15px 15px;
+			
+			}
+			#footerb{
+            height:70px;
+			width:500px;
+			
+			float:left;
+			border-radius:15px 15px 15px 15px;
+			}
+			#footerc{
+            height:70px;
+			width:290px;
+			font-size:24px;
+			
+			text-align:center;
+			border-radius:15px 15px 15px 15px;
+			float:right;
+			
+			}
