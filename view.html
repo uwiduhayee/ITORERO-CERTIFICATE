@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>urugerero</title>
+<script language="javascript"type="text/javascript">
+   window.history.forward();</script>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/s.css">
+  <style type="text/css">
+    #login
+{
+  background:#fff;
+  margin-left: 0px;
+  border: 2px solid darkblue;
+  width: 300px;
+ 
+}
+#login p
+{
+  font-family: verdana;
+  color: darkblue;
+
+
+}
+#container
+{
+ 
+  margin-left:0px;
+}
+#menu ul li
+{
+color: white;
+font-size: 20px;
+list-style: none; 
+}
+</style>
+</head>
+<body>
+  <center>
+<div id="back">
+  <br>
+  <table class="heading" border="0" width="1000" height="100"><tr><td width="120" height="100"><img src="fg.jpg" width="120" height="100"></td><td><center><font face="algerian" size="6">URUGERERO CERTIFICATION MANAGEMENT SYSTEM</center></font></td><td width="120" height="100"><img src="fg.jpg" width="120" height="100"></td></tr></table>
+  <br>
+  <div id="menu">
+    <ul>
+
+      <li><a href="adminhome.php"> Home</a></li>
+      <li><a href="register.php">Add participant</a></li>
+            <li><a href="view.php">View</a></li>
+            <li><a href="men.php">Men</a></li>
+            <li><a href="women.php">Women</a></li>
+        
+            <li><a href="certificate.php">Certificate</a></li>
+             <li><a href="logout.php">Logout</a></li>
+    </ul>
+  </div>  
+  <br>
+  <style type="text/css" media="print">
+.hide{display:none}
+</style>
+<script type="text/javascript">
+function printpage() {
+document.getElementById('printButton').style.visibility="hidden";
+window.print();
+document.getElementById('printButton').style.visibility="visible";  
+}
+</script>
+<body>
+<input name="print" type="button" value="Print" id="printButton" onClick="printpage()">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center">
+      <table width="595" border="0" cellspacing="0" cellpadding="0">
+       
+<div id="text">
+    
+<?php
+
+mysql_connect("localhost","root","");
+mysql_select_db("urugerero_db");
+
+$data=mysql_query("select * from participants  ");
+?>
+<center><h1> <u> <b> LIST OF PARTICIPANTS </b></u></h1></center>
+  <br><br><form action="search3.php" method="post">
+ <center> <input type="text" name="ss" placeholder="search...">
+<input type="submit" name="search" value="search"></form></center>
+</form>  
+<?php
+
+mysql_connect("localhost","root","");
+mysql_select_db("urugerero_db");
+
+$sql=mysql_query(("SELECT * FROM participants"));
+?> 
+<br> <br><br>       
+
+ <center><TABLE border="1" height="150%" width="130%"  align="center" bgcolor="white">
+  <tr style="color:blue" bgcolor="white">
+    <Th><font size="4">Part_id</font></Th>  
+    <Th><font size="4">First Name</Th>
+    <th><font size="4">Last Name</th>
+      <th><font size="4">Gender</th>
+      
+    <Th><font size="4">Phonenumber</Th>
+    <Th><font size="4">Previous_school</Th>
+    <Th><font size="4">Center</Th>
+    <Th><font size="4">Year</Th>
+      <Th><font size="4">Upadate</Th>
+      <Th><font size="4">Print</Th>
+        
+      
+<tr style="color:white;">
+</center>
+      <?php
+while($rows=mysql_fetch_array($data))
+{
+
+    $par_id=$rows['par_id'];
+    $id=$rows['par_id'];
+   ?>
+  
+  <tr>
+    <TD style="color:blue" bgcolor="white"><font size="3"><?php echo $rows ["par_id"] ?></font></TD>
+    <td><font size="3" color="#000000"><?php echo $rows  ["firstname"]  ?></font> 
+        <TD><font size="3" color="#000000" style="background-color: white;"><?php echo $rows  ["lastname"] ?></font></TD>
+    <td><font size="3" color="#000000" style="background-color: white;"><?php echo $rows  ["gender"]  ?></font>  </td>
+    <td><font size="3" color="#000000" style="background-color: white;"><?php echo $rows  ["phonenumber"]  ?> </font></td>
+    <td><font size="3" color="#000000" style="background-color: white;"><?php echo $rows  ["previousschool"]  ?> </font></td>
+    <td><font size="3" color="#000000" style="background-color: white;"><?php echo $rows  ["center"]  ?> </font>
+    <td><font size="3" color="#000000" style="background-color: white;"><?php echo $rows  ["year"]  ?>  </font>
+        <?php include('tooltip_edit.php'); ?>                              
+                        <td >
+                        <a rel="tooltip"  title="Edit" id="e<?php echo $id; ?>" href="Update1.php<?php echo '?id='.$id; ?>"> update</a>
+                        </td> 
+
+       <TD style="color:#0000CC" bgcolor="white"><a href="view1.php?view=<?php echo $rows["par_id"];  ?>"onclick="return confirm('are you sure to  print certificate')"><font size="5" color="#0000FF">print</font></a></TD>
+   
+<td>
+  <?php
+}
+  ?>
+
+</table>
+          </tr>
+        </table>
+        <div align="center">
+      </div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="95">&nbsp;</td>
+    <td><div align="right">
+   </div>
+</body>
+</html>
